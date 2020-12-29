@@ -48,9 +48,9 @@ public class BeerDto {
     @NotNull
     private Long upc;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING)
     @Positive
     @NotNull
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private BigDecimal price;
 
     private Integer quantityOnHand;
