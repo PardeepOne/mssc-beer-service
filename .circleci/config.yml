@@ -2,6 +2,16 @@
 #
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
+#version: 2.1
+#
+#orbs:
+#    maven: circleci/maven@0.0.12
+#
+#workflows:
+#    maven_test:
+#        jobs:
+#            - maven/test # checkout, build, test, and upload test results
+
 version: 2
 jobs:
     build:
