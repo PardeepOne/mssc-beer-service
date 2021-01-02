@@ -85,4 +85,11 @@ public class BeerServiceImpl implements BeerService {
         );
         return beerPagedList;
     }
+
+    @Cacheable(cacheNames = "beerUpcCache",key = "#upc")
+    @Override
+    public BeerDto getByUpc(String upc) {
+        log.info(" ** Called guru.springframework.msscbeerservice.services.BeerServiceImpl.getByUpc **");
+        return beerMapper.beerToBeerDto(beerRepository.findByUpc(upc).orElseThrow(NotFoundException::new));
+    }
 }
