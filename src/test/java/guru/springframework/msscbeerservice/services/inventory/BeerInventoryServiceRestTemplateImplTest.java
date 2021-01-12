@@ -22,8 +22,10 @@ class BeerInventoryServiceRestTemplateImplTest {
 
     @Test
     void getOnhandInventory(){
-        Integer quantityOnhand = beerInventoryService.getOnhandInventory(BeerLoader.BEER_1_UUID);
+        //TODO: to be done with UPC instead of UUID
 
-        System.out.println(quantityOnhand);
+//        Integer quantityOnhand = beerInventoryService.getOnhandInventory(BeerLoader.BEER_1_UUID);
+//
+//        System.out.println(quantityOnhand);
     }
 }
