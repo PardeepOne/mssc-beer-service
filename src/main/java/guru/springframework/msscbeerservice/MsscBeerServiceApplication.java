@@ -10,7 +10,7 @@ import org.springframework.web.WebApplicationInitializer;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 
-@SpringBootApplication(exclude = ArtemisAutoConfiguration.class)
+@SpringBootApplication
 public class MsscBeerServiceApplication {
 
     public static void main(String[] args) {
